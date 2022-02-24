@@ -12,14 +12,91 @@
 <body>
     <div>
         <ul class = "nav">
-            <li><a id = "tag" href="#">Introduction</a></li>
-            <li><a id = "active" href="#">Projects</a></li>
-            <li><a id = "tag" href="#">Experiences</a></li>
-            <li><a id = "tag" href="#">Contacts</a></li>
+            <li><a id = "tag" href="index.html">Introduction</a></li>
+            <li><a id = "active" href="project.html">Projects</a></li>
+            <li><a id = "tag" href="experience.html">Experiences</a></li>
+            <li><a id = "tag" href="contact.html">Contacts</a></li>
         </ul>
     </div>
 
     <span class="blank"></span>
+
+    <div class="page">
+        <div class="profile">
+          <img class="profile-picture" src="img/personal.jpg" width="200"/>
+          <h1 class="name, OCR">Jiayi Gao</h1>
+          <h4 class="name, OCR">Projects :)</h4>
+        </div>
+        
+        <div class="information">
+          <p class="intro">
+            <span>Here is a list of projects I have done during my master study.</span> 
+          </p>
+
+          <hr></hr>
+
+          <table class = "eduacation-table OCR">
+            <tr>
+                <td>
+                    Java Full Stack Development: Food Ordering and Delivery System
+                </td>
+                <td>
+                    Sep.2020 - Dec.2020
+                </td>
+                <td>
+                    <p>1. Built a Spark-based web page for users to order food and receive delivery service online (React JS/Bootstrap). </p>
+                    <p>2. Implemented token-based login/logout flow with React Router v4 and server-side user authentication with JWT.</p>
+                    <p>3. Applied Spark MVC (dependency injection, inversion of control, RESET API, etc.) to support HTTP requests and responses (menu updating, item searching, listing, food ordering, checking out, delivery, etc.).</p>
+                    <p>4. Enhanced user search with MongoDB databases to store unstructured data, allow users query in different manners.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Reliable Data Transfer Protocol Design: Stop-And-Wait, Go-Back-N
+                </td>
+                <td>
+                    Nov.2020 - Dec.2020
+                </td>
+                <td>
+                    <p>1. Implemented Stop-And-Wait, Go-back-N Protocol to perform reliable data transfer with bit errors and packet loss. </p>
+                    <p>2. Designed message format and checking criteria of both protocols (sequence number, ack, checksum, timeout, etc.)</p>
+                    <p>3. Allowed proper multi-threaded synchronization with Java concurrency APIs (ThreadPool \& Executor Framework).</p>
+                    <p>4. Built corresponding network layer with unreliable best effort service and application layer with multiple senders and receivers to evaluate the performance and reliability (100\%) of the designed protocols.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Java Multi-threaded Application: Multiplayer Live Chat Room
+                </td>
+                <td>
+                    Mar.2020 - Apr.2020
+                </td>
+                <td>
+                    <p>1. Built interactive online chat room for users to chat with specific individuals or in groups across the network. </p>
+                    <p>2. Built with Java socket programming and designed TCP to streaming filter out appropriate reply of a given input. </p>
+                    <p>3. Improved user experience and communication efficiency by allowing randomly formed response through shortcut keys on top of the given JSON grammar template.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Java Web Service Development: Event Search and Ticket Recommendation
+                </td>
+                <td>
+                    May 2020 - Jul 2020
+                </td>
+                <td>
+                    <p>1. Developed an interactive web page for users to search for events and purchase tickets (HTML/CSS/JavaScript). </p>
+                    <p>2. Implemented Java servlets with RESTful APIs to handle HTTP requests and response.</p>
+                    <p>3. Built MySQL database to capture real business data from TicketMaster API and MongoDB to enhance efficiency.</p>
+                    <p>4. Developed a content-based recommendation algorithm to match similar events by categories.</p>
+                    <p>5. Enhanced personalized recommendation accuracy by ordering events by distance, stars, and matched categories.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
     
 </body>
 

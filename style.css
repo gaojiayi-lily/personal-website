@@ -2,30 +2,61 @@ html {
     padding: 10px;
 }
 
-.blank { 
-    clear:both; 
-    overflow:hidden; 
-    display:block; 
-    height: 100px;
+@media(min-width: 800px) {
+    .nav {
+        background-color: lavenderblush;
+        list-style-type: none;
+        padding: 10px;
+        position: fixed;
+        width: 96%;
+        display: flex;
+        flex-direction: row;
+    }
+    .blank { 
+        clear:both; 
+        overflow:hidden; 
+        display:block; 
+        height: 100px;
+    }
 }
 
-.nav {
-    background-color: lavenderblush;
-    list-style-type: none;
-    padding: 10px;
-    position: fixed;
-    width: 96%;
-    display: flex;
-    flex-direction: row;
+@media(max-width: 800px) {
+    .nav {
+        background-color: lightskyblue;
+        list-style-type: none;
+        padding: 10px;
+        position: fixed;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .blank { 
+        clear:both; 
+        overflow:hidden; 
+        display:block; 
+        height: 280px;
+    }
 }
 
-.page-1 {
-    background-color: lavenderblush;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+@media(min-width: 800px) {
+    .page {
+        background-color: lavenderblush;
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        justify-content: center;
+        padding: 10px;
+    }
+}
+@media(max-width: 800px) {
+    .page {
+        background-color: lightskyblue;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        padding: 10px;
+    }
 }
 
 #active {
@@ -60,10 +91,8 @@ html {
     background-color: lightgoldenrodyellow;
     margin: 10px;
     max-width: 20%;
-    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .profile-picture {
@@ -93,4 +122,9 @@ html {
 
 .eduacation-table {
     margin: 10px;
+}
+
+.contacts {
+    margin-top: 10px;
+    list-style-type: none;
 }
